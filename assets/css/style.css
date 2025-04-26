@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --primary-color: #0A192F;
+    --secondary-color: #00BFFF;
+    --dark-secondary: #333;
+    --white: #fff;
+    --dark-grey: grey;
+    --bg-grey: #EDF1EE;
+    --bg-grey2: rgb(239, 238, 238);
+    --peach: var(--white)AEB;
+    --grey: #d7d6d4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+    background: var(--primary-color);
+}
+
+.login-form .row{
+    height: 100vh;
+    align-items: center;
+}
+
+.login-form .login-message h1{
+    width: fit-content;
+    margin:0 auto 1rem;
+    background: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: .5rem 3rem;
+    border-radius: 40px;
+
+}
+.login-form .login-message p{
+    width: 80%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.form-wrapper{
+    max-width: 450px;
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--secondary-color) !important;
+}
+
+.form-wrapper input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: var(--bg-grey2);
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.form-wrapper p{
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--primary-color);
+}
+
+.form-wrapper h4{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.form-wrapper .form-title p{
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.form-wrapper .password-div{
+    position: relative;
+}
+
+.form-wrapper .password-div .toggle-password{
+    position: absolute;
+    top: 3.2rem;
+    right: 1rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.form-wrapper .btn-brand{
+    width: 100%;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: .7s;
+}
+
+.form-wrapper .btn-brand:hover{
+    opacity: 0.8;
+}
+
+.forgot-password{
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+
+.form-wrapper .otp-container {
+     background: var(--white);
+     padding: 40px 30px;
+     border-radius: 12px;
+     width: 100%;
+     max-width: 420px;
+     text-align: center;
+ }
+
+.form-wrapper .otp-container h2 {
+     margin-bottom: 10px;
+     font-size: 18px;
+     color: var(--dark-secondary);
+ }
+
+.form-wrapper .otp-container p {
+     color: var(--dark-grey);
+     font-size: 14px;
+     margin-bottom: 20px;
+ }
+
+ .form-wrapper .inputs input {
+     border-color: var(--primary-color);
+     box-shadow: 0 0 3px var(--primary-color);
+ }
+
+ /* .validate-btn {
+     width: 90%;
+     background-color: var(--primary-color);
+     color: var(--white);
+     border: none;
+     padding: 12px 30px;
+     border-radius: 30px;
+     cursor: pointer;
+     font-size: 16px;
+     margin-bottom: 10px;
+     transition: background-color 0.3s;
+ }
+
+ .validate-btn:hover {
+     background-color: #ff3f3f;
+ } */
+
+.form-wrapper .otp-container .resend-div {
+     font-size: 14px;
+     margin-top: 10px;
+ }
+
+.form-wrapper .otp-container .resend-div .resend {
+     color: var(--primary-color);
+     /* text-decoration: underline; */
+     cursor: pointer;
+ }
+
+@media (max-width: 991px) {
+    body {
+            background: var(--white);
+    }
+    .login-form .row {
+        height: 100vh;
+        align-items:flex-start
+    }
+    .login-form .login-message{
+        width: 100%;
+        background: var(--primary-color);
+        padding: 1rem;
+    }
+    .login-form .login-message h1 {
+        font-size: 2rem;
+    }
+    .login-form .login-message p {
+        width: 90%;
+        margin: auto;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white);
+    }
+    .form-wrapper {
+        /* min-width: 400px; */
+        margin: auto;
+        background: var(--white);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+}
